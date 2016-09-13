@@ -208,6 +208,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
+      "admin",
     "onservice",
     "inrealm",
     "ingroup",
@@ -220,13 +221,33 @@ function create_config( )
     "set",
     "get",
     "broadcast",
-    "download_media",
     "invite",
     "all",
     "leave_ban",
-    "admin"
+    "supergroup",
+    "whitelist",
+    "msg_checks",
+    "plugins",
+    "kick",
+    "lock_badword",
+    "lock_emoje",
+    "lock_tag",
+    "lock_username",
+    "lock_english",
+    "badword",
+    "me",
+    "welcome",
+    "lock_fwd",
+    "lock_reply",
+    "kickme",
+    "tagall",
+    "vip",
+    "lock_join",
+    "lock_midia",
+    "reply",
+    "kickbot"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {112235430,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
